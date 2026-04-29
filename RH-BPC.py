@@ -206,7 +206,7 @@ def read_instance(csv_path):
     }
 
 
-_const = math.sqrt((DR['g'] ** 3) / (2.0 * DR['rho'] * DR['zeta'] * DR['n']))
+_const = (DR['g'] ** 3) / math.sqrt(2.0 * DR['rho'] * DR['zeta'] * DR['n'])
 
 
 def energy_segment(load, d_ij):
